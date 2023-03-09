@@ -8,14 +8,6 @@
 
 ---
 
-### NOTES
-
-- Jalankan command npm install terlebih dahulu di terminal pada folder project ini.
-- Pada skeleton terdapat folder `__tests__`, folder ini beserta - file-file di dalamnya tidak boleh diubah sama sekali.
-- untuk menjalankan test untuk memastikan solusi kamu sudah benar, jalankan command npm test
-
----
-
 ## Directions
 
 Seseorang pengunjung bar direpresentasikan oleh JavaScript memiliki variable name, age, dan money. Ia masuk ke bar untuk memesan minuman, namun bar memiliki kondisi sebagai berikut:
