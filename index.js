@@ -14,6 +14,35 @@
  *   dan ganti [...] dengan sisa uang yang telah dikurangi oleh harga minuman.
  */
 
- let name = 'Rifan'
- let age = 17
- let money = 2000000
+let nama = "Rifan"
+let age = 21
+let money = 2000000
+
+function pemesanan(name, age, money){
+
+    if(name == null || name == ' '){
+        console.log('Anda tidak boleh masuk!');
+        return 0;
+    } 
+
+    if(name !== null && age < 17){
+        console.log('Anda hanya boleh memesan juice');
+        const harga_juice = 50000;
+        if(money < harga_juice){
+            console.log("Uang tidak cukup. Anda harus pulang.");
+        }else{
+            console.log(`Anda bisa pesan minum. Sisa uang anda: Rp${money-harga_juice}`);
+        }
+    }else{
+        console.log('Anda hanya boleh memesan anggur');
+        const harga_anggur = 300000;
+        if(money < harga_anggur){
+            console.log("Uang tidak cukup. Anda harus pulang.");
+        }else{
+            console.log(`Anda bisa pesan minum. Sisa uang anda: Rp${money-harga_anggur}`);
+        }
+    }
+
+}
+
+pemesanan(nama, age, money)
