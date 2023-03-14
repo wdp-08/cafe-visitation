@@ -14,6 +14,6 @@
  *   dan ganti [...] dengan sisa uang yang telah dikurangi oleh harga minuman.
  */
 
- let name = 'Ahmad'
+ let name = 'Rifan'
  let age = 17
  let money = 2000000
