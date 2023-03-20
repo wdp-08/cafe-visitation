@@ -10,10 +10,36 @@
  *
  * - Juice memiliki harga 50000, sedangkan anggur memiliki harga 300000.
  *   Jika money/uang yang dimiliki tidak mencukupi, maka tampilkan di console "Uang tidak cukup. Anda harus pulang.".
- *   Jika uang cukup, tampilkan "Anda bisa pesan minum. Sisa uang anda: [...]",
- *   dan ganti [...] dengan sisa uang yang telah dikurangi oleh harga minuman.
+ *   Jika uang cukup, tampilkan "Anda bisa pesan [...]. Sisa uang anda: [...]",
+ *   dan ganti [...] dengan nama minuman yang bisa dipesan dan sisa uang yang telah dikurangi oleh harga minuman.
  */
 
- let name = 'Ahmad'
- let age = 17
- let money = 2000000
+ name = "candra";
+ age  = 16;
+ money = 60000;
+ 
+ function DrinkCafe(name, age, money) {
+     if (name === "") {
+         console.log("Anda tidak boleh masuk!");
+         return;
+     }
+ 
+     if (age < 17) {
+         drink = { 
+         product: "juice", 
+         price: 50000 };
+     } else {
+         drink = { 
+         product: "anggur",
+         price: 300000 };
+     }
+ 
+     if (money < drink.price) {
+         console.log("Uang tidak cukup. Anda harus pulang.");
+     } else {
+         let change = money - drink.price;
+         console.log("Anda bisa pesan " + drink.product + ". Sisa uang Anda: " + change);
+     }
+ }
+ 
+ DrinkCafe(name, age, money);
