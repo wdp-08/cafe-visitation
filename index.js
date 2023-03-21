@@ -14,6 +14,31 @@
  *   dan ganti [...] dengan sisa uang yang telah dikurangi oleh harga minuman.
  */
 
- let name = 'Ahmad'
- let age = 17
+ let name = 'Kevin'
+ let age = 21
  let money = 2000000
+
+// Code disini
+function cafeVisit(name, age, money) {
+    if (name === '') {
+        console.log('Anda tidak boleh masuk!')
+    }
+    else if (age < 17) {
+        if (money < 50000) {
+            console.log('Uang tidak cukup. Anda harus pulang.')
+        }
+        else {
+            console.log('Anda bisa pesan minum. Sisa uang anda: ' + (money - 50000))
+        }
+    }
+    else if (age >= 17) {
+        if (money < 300000) {
+            console.log('Uang tidak cukup. Anda harus pulang.')
+        }
+        else {
+            console.log('Anda bisa pesan minum. Sisa uang anda: ' + (money - 300000))
+        }
+    }
+}
+
+cafeVisit(name, age, money);
