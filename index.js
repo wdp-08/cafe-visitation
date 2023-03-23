@@ -14,6 +14,33 @@
  *   dan ganti [...] dengan sisa uang yang telah dikurangi oleh harga minuman.
  */
 
- let name = 'Ahmad'
- let age = 17
- let money = 2000000
+function bar(name, age, money) {
+    let uangSisa;
+    let juice = 50000;
+    let anggur = 300000;
+
+    if (name === "") {
+        return "Anda tidak boleh masuk!";
+    } else {
+        if (age >= 17) {
+            // umur diatas 17 th
+            if (money >= anggur) {
+                uangSisa = money - anggur;
+                return "Anda bisa pesan minum.\nSisa uang anda : "+uangSisa
+            } else {
+                return "Uang tidak cukup. Anda harus pulang"
+            }
+        } else {
+            // umur dibawah 17 th
+            if (money >= juice) {
+                uangSisa = money - juice;
+                return "Anda bisa pesan minum.\nSisa uang anda : "+uangSisa
+            } else {
+                return "Uang tidak cukup. Anda harus pulang"
+            }
+        }
+    }
+}
+
+let custSatu = bar("Intan", 20, 600000)
+console.log(custSatu);
