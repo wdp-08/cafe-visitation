@@ -15,7 +15,7 @@
  */
 
  let name = 'Dodi'
- let age = 18;
+ let age = 17;
  let money = 2000000;
 
  let hargaJuice = 50000;
