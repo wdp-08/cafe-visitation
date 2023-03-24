@@ -14,6 +14,12 @@
  *   dan ganti [...] dengan sisa uang yang telah dikurangi oleh harga minuman.
  */
 
- let name = 'Ahmad'
+ let name = 'Dodi'
  let age = 17
  let money = 2000000
+
+ if(name) {
+    if (age < 17 && money >= hargaJuice) {
+        console.log("Anda bisa memesan juice." + "Sisa uang anda = " + (money - hargaJuice));
+    }
+ }
