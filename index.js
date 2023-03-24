@@ -15,11 +15,23 @@
  */
 
  let name = 'Dodi'
- let age = 17
- let money = 2000000
+ let age = 18;
+ let money = 2000000;
 
- if(name) {
-    if (age < 17 && money >= hargaJuice) {
+ let hargaJuice = 50000;
+ let hargaAnggur = 300000;
+
+ if(name) { // Ketika ada nama
+    if (age < 17 && money >= hargaJuice) { // Ketika umur dibawah 17 bisa memesan juice tidak bisa memesan angggur
         console.log("Anda bisa memesan juice." + "Sisa uang anda = " + (money - hargaJuice));
     }
+    else if (age >= 17 && money >= hargaAnggur) { // Ketika umur 17 keatas bisa memesan anggur
+        console.log("Anda bisa memesan anggur." + "Sisa uang anda = " + (money - hargaAnggur));
+    }
+    else {
+        console.log("Uang anda tidak cukup. Anda harus pulang"); // Jika uang tidak cukup
+    }
+ }
+ else {
+    console.log("Anda tidak boleh masuk"); // Ketika tidak ada nama
  }
