@@ -30,7 +30,7 @@ function meMesan(nama, umur, uang) {
       // jika umur kurang dari 17 tahun
       console.log("Anda hanya boleh memesan juice.");
       if (uang < 50000) {
-        console.log("Uang tidak cukup, Anda harus pulang.");
+        alert("Uang tidak cukup, Anda harus pulang.");
       } else {
         uang -= 50000;
         console.log("Anda bisa pesan minum, Sisa uang anda: " + uang);
