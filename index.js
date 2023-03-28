@@ -14,6 +14,35 @@
  *   dan ganti [...] dengan sisa uang yang telah dikurangi oleh harga minuman.
  */
 
- let name = 'Ahmad'
- let age = 17
- let money = 2000000
+ // definisikan variabel
+let name = "John";
+let age = 20;
+let money = 400000;
+
+// cek apakah name kosong
+if (!name) {
+  console.log("Anda tidak boleh masuk!");
+} else {
+  // cek apakah age dibawah 17 tahun
+  if (age < 17) {
+    // hanya bisa memesan juice
+    if (money >= 50000) {
+      // uang cukup untuk memesan juice
+      money -= 50000;
+      console.log("Anda bisa pesan minum. Sisa uang anda: " + money);
+    } else {
+      // uang tidak cukup untuk memesan juice
+      console.log("Uang tidak cukup. Anda harus pulang.");
+    }
+  } else {
+    // hanya bisa memesan anggur
+    if (money >= 300000) {
+      // uang cukup untuk memesan anggur
+      money -= 300000;
+      console.log("Anda bisa pesan minum. Sisa uang anda: " + money);
+    } else {
+      // uang tidak cukup untuk memesan anggur
+      console.log("Uang tidak cukup. Anda harus pulang.");
+    }
+  }
+}
